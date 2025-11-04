@@ -27,6 +27,10 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['192.168.30.231', 'localhost', '127.0.0.1', 'https://peitel-backend-o89t.onrender.com', 'peitel-backend-o89t.onrender.com']
 
+CSRF_TRUSTED_ORIGINS = [
+    "https://peitel-backend-o89t.onrender.com"
+]
+
 
 # Application definition
 
