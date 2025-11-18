@@ -28,7 +28,7 @@ DEBUG = True
 ALLOWED_HOSTS = ['192.168.30.231', 'localhost', '127.0.0.1', 'https://peitel-backend-o89t.onrender.com', 'peitel-backend-o89t.onrender.com']
 
 CSRF_TRUSTED_ORIGINS = [
-    "https://peitel-backend-o89t.onrender.com"
+    "https://peitel-backend-o89t.onrender.com", "http://127.0.0.1:8000/"
 ]
 
 
@@ -64,7 +64,7 @@ ROOT_URLCONF = 'OurProject.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [BASE_DIR / "OurProject" / "templates"],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
